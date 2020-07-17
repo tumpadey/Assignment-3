@@ -5,7 +5,7 @@
         return mile;
      }
      var number =feetToMile();
-     var result =Math.floor(number);
+     result = result.toFixed(3);
 
      console.log(result);
 
@@ -26,32 +26,32 @@
 
 
 
-//brickCalculator
+brickCalculator
 
-    function brickCalculator(floor){
+     function brickCalculator(floor){
+
      const brick =1000;
 
      if(floor <= 10){
 
-      var numberOfBrick = 15 * brick;
-      return numberOfBrick; 
-     }
-     else if(floor <= 20){
-
-       numberOfBrick = 12 * brick;
+       var numberOfBrick = 15 * brick * floor;
+       
        return numberOfBrick; 
-     }
-     else{
 
-       numberOfBrick =10 * brick;
-       return numberOfBrick;
-     }
+     }else if(floor <= 20){
 
-   }
+        numberOfBrick = (15 * 1000 * 10) + (12*1000 *(floor - 10)); // (15 * 1000 * 10)=150000, 1 to 10th floor brick
+        return numberOfBrick; 
 
-  var calculateBrick= brickCalculator();
-  console.log("Number Of Brick "+ calculateBrick);
+     }else
 
+      numberOfBrick = (15 * 1000 * 10) + (12 * 1000 * 10) + (10*1000 *(floor - 20)); // (15 * 1000 * 10) + (12 * 1000 * 10) = 1 to 10th floor brick and 10th to 20th floor brick
+      return numberOfBrick;
+
+    }
+
+    var calculateBrick= brickCalculator();
+    console.log("Number Of Brick "+ calculateBrick);
 
 
   //tinyFriend
