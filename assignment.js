@@ -1,19 +1,19 @@
-//feetToMile
+ feetToMile
 
-    function feetToMile(feet){
-      var mile = feet/5280;
-        return mile;
-     }
-     var number =feetToMile();
-     result = result.toFixed(3);
+  function feetToMile(feet){
+    var mile = feet/5280;
+    return mile;
+}
+   var result =feetToMile();
+    result = result.toFixed(3);
 
-     console.log(result);
+    console.log(result);
 
 
 
-//woodCalculator
+  //woodCalculator
 
-    function woodCalculater(chair,table,bed){
+    function woodCalculator(chair,table,bed){
       var chairCount = chair*1;
       var tableCount =table*3;
       var bedCount = bed*5;
@@ -21,12 +21,12 @@
       var totalWood = chairCount+tableCount+bedCount;
       return totalWood;
      }
-     var woodResult= woodCalculater();
+     var woodResult= woodCalculator();
      console.log(woodResult);
 
 
 
-brickCalculator
+ //brickCalculator
 
      function brickCalculator(floor){
 
@@ -54,7 +54,7 @@ brickCalculator
     console.log("Number Of Brick "+ calculateBrick);
 
 
-  //tinyFriend
+  tinyFriend
 
   function tinyFriend(names){
     var shortestName = names[0];
